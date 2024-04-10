@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Configurations Changed
+nav_order: 5
 ---
 
 # Configurations Changed

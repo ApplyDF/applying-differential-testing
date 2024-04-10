@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Found Bugs
+nav_order: 6
 ---
 
 # Found Bugs
@@ -35,4 +36,17 @@ CREATE TABLE t0 (c0 TEXT CHECK(c0 = """")); -- QUERY OK
 CREATE TABLE t0 (c0 INT);
 CREATE INDEX i0 ON t0 (('''')); -- QUERY OK
 CREATE INDEX i0 ON t0 (("""")); -- QUERY OK
+```
+---
+
+## Backslash Escaping Inconsistency in LIKE Operator
+This is a verified bug in MySQL 8.3 where the system with 'NO_BACKSLASH_ESCAPES' mode enabled gives out error when escaping backslash ('\') in the LIKE operator. This error occurs only in expressions in some table constraints and index expressions.
+```
+SELECT 'a' LIKE 'a' ESCAPE '\'; -- returns 1
+CREATE TABLE t0 (c0 BOOLEAN DEFAULT('a' LIKE 'a' ESCAPE '\')); -- ERROR 1210 (HY000): Incorrect arguments to ESCAPE
+CREATE TABLE t0 (c0 BOOLEAN GENERATED ALWAYS AS ('a' LIKE 'a' ESCAPE '\')); -- Incorrect arguments to ESCAPE
+CREATE TABLE t0 (c0 BOOLEAN, CHECK('a' LIKE 'a' ESCAPE '\')); -- Incorrect arguments to ESCAPE
+
+CREATE TABLE t0 (c0 BOOLEAN);
+CREATE INDEX i0 on t0 (('a' LIKE 'a' ESCAPE '\')); -- Incorrect arguments to ESCAPE
 ```
