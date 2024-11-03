@@ -22,3 +22,5 @@ The following pages includes information on how we remove/add/modify SQLancer co
 **DBMS** - which DBMS's implementation in SQLancer is being changed
 
 **Description** - additional information on the changes
+
+**Related Links** - links to the related information in the documentations
