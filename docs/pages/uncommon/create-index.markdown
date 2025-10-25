@@ -2,7 +2,7 @@
 layout: minimal
 title: CREATE INDEX
 parent: Uncommon SQL Changes
-nav_order: 5
+nav_order: 6
 ---
 
 # CREATE INDEX

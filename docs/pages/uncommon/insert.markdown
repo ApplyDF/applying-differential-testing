@@ -2,7 +2,7 @@
 layout: minimal
 title: INSERT
 parent: Uncommon SQL Changes
-nav_order: 6
+nav_order: 7
 ---
 
 # INSERT

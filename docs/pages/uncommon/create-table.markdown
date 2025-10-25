@@ -2,7 +2,7 @@
 layout: minimal
 title: CREATE TABLE
 parent: Uncommon SQL Changes
-nav_order: 3
+nav_order: 4
 ---
 
 # CREATE TABLE

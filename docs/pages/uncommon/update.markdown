@@ -2,7 +2,7 @@
 layout: minimal
 title: UPDATE
 parent: Uncommon SQL Changes
-nav_order: 7
+nav_order: 8
 ---
 
 # UPDATE

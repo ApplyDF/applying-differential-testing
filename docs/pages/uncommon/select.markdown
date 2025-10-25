@@ -2,7 +2,7 @@
 layout: minimal
 title: SELECT
 parent: Uncommon SQL Changes
-nav_order: 4
+nav_order: 5
 ---
 
 # SELECT
