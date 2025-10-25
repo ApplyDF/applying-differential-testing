@@ -1,8 +1,8 @@
 ---
 layout: minimal
 title: SELECT
-parent: Common SQL Changes
-nav_order: 1
+parent: Uncommon SQL Changes
+nav_order: 4
 ---
 
 # SELECT

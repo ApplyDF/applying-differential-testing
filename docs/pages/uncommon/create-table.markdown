@@ -1,8 +1,8 @@
 ---
 layout: minimal
 title: CREATE TABLE
-parent: Common SQL Changes
-nav_order: 0
+parent: Uncommon SQL Changes
+nav_order: 3
 ---
 
 # CREATE TABLE

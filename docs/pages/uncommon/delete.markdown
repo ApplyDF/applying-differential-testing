@@ -1,8 +1,8 @@
 ---
 layout: minimal
 title: DELETE
-parent: Common SQL Changes
-nav_order: 5
+parent: Uncommon SQL Changes
+nav_order: 8
 ---
 
 # DELETE

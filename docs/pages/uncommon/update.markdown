@@ -1,8 +1,8 @@
 ---
 layout: minimal
 title: UPDATE
-parent: Common SQL Changes
-nav_order: 4
+parent: Uncommon SQL Changes
+nav_order: 7
 ---
 
 # UPDATE
